@@ -1,7 +1,13 @@
 {
-    "name": "@wiz/language-service",
+    "name": "@wiz-sh/language-service",
     "version": "0.1.0",
+    "description": "Editor intelligence and incremental project services for Wiz",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wiz-sh/lsp.git",
+        "directory": "packages/language-service"
+    },
     "type": "module",
     "types": "./dist/index.d.ts",
     "exports": {
@@ -11,12 +17,21 @@
             "default": "./dist/index.js"
         }
     },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "bun build ./src/index.ts --outdir ./dist --target bun --format esm && tsc --project ./tsconfig.build.json"
     },
     "dependencies": {
-        "@wiz/compiler": "^0.1.0",
-        "@wiz/formatter": "^0.1.0",
-        "@wiz/linter": "^0.1.0"
+        "@wiz-sh/compiler": "^0.1.0",
+        "@wiz-sh/formatter": "^0.1.0",
+        "@wiz-sh/linter": "^0.1.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "bun": ">=1.2.0"
     }
 }

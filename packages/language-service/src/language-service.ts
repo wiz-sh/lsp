@@ -5,13 +5,13 @@ import {
     type Scope,
     SyntaxKind,
     type TextRange,
-} from "@wiz/compiler";
+} from "@wiz-sh/compiler";
 import {
     type FormatOptions,
     type FormatRange,
     formatSourceFile,
-} from "@wiz/formatter";
-import type { LintDiagnostic } from "@wiz/linter";
+} from "@wiz-sh/formatter";
+import type { LintDiagnostic } from "@wiz-sh/linter";
 import { DocumentStore } from "./document-store.ts";
 import {
     containsNode,

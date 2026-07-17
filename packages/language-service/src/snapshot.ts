@@ -1,5 +1,5 @@
-import type { BindingResult, CheckResult, SourceFile } from "@wiz/compiler";
-import type { LintDiagnostic } from "@wiz/linter";
+import type { BindingResult, CheckResult, SourceFile } from "@wiz-sh/compiler";
+import type { LintDiagnostic } from "@wiz-sh/linter";
 
 export interface DocumentSnapshot {
     uri: string;

@@ -7,10 +7,10 @@
         "outDir": "./dist",
         "rootDir": "./src",
         "paths": {
-            "@wiz/config": [
+            "@wiz-sh/config": [
                 "../../../compiler/packages/config/dist/index.d.ts"
             ],
-            "@wiz/language-service": [
+            "@wiz-sh/language-service": [
                 "../language-service/dist/index.d.ts"
             ]
         }

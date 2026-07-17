@@ -1,7 +1,13 @@
 {
-    "name": "@wiz/lsp",
+    "name": "@wiz-sh/lsp",
     "version": "0.1.0",
+    "description": "Language Server Protocol transport for the Wiz language service",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wiz-sh/lsp.git",
+        "directory": "packages/lsp"
+    },
     "type": "module",
     "types": "./dist/index.d.ts",
     "exports": {
@@ -14,11 +20,20 @@
     "bin": {
         "wiz-lsp": "./dist/index.js"
     },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "bun build ./src/index.ts --outdir ./dist --target bun --format esm && tsc --project ./tsconfig.build.json"
     },
     "dependencies": {
-        "@wiz/config": "^0.1.0",
-        "@wiz/language-service": "^0.1.0"
+        "@wiz-sh/config": "^0.1.0",
+        "@wiz-sh/language-service": "^0.1.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "bun": ">=1.2.0"
     }
 }

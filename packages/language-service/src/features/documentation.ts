@@ -4,7 +4,7 @@ import {
     type FunctionDeclaration,
     getDocumentation,
     getStandardLibraryFiles,
-} from "@wiz/compiler";
+} from "@wiz-sh/compiler";
 import type { DocumentSnapshot } from "../snapshot.ts";
 
 const standardLibraryFiles = getStandardLibraryFiles();

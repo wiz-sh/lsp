@@ -1,6 +1,6 @@
-import type { TextRange } from "@wiz/compiler";
-import type { FormatOptions } from "@wiz/formatter";
-import type { LintDiagnostic, LinterOptions } from "@wiz/linter";
+import type { TextRange } from "@wiz-sh/compiler";
+import type { FormatOptions } from "@wiz-sh/formatter";
+import type { LintDiagnostic, LinterOptions } from "@wiz-sh/linter";
 
 export interface TextEdit {
     range: TextRange;

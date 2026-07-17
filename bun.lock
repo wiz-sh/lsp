@@ -3,43 +3,43 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@wiz/lsp-workspace",
+      "name": "@wiz-sh/lsp-workspace",
       "devDependencies": {
         "@biomejs/biome": "^2.2.0",
-        "@wiz/compiler": "file:../compiler/packages/compiler",
-        "@wiz/config": "file:../compiler/packages/config",
-        "@wiz/formatter": "file:../linter/packages/formatter",
-        "@wiz/linter": "file:../linter/packages/linter",
+        "@wiz-sh/compiler": "file:../compiler/packages/compiler",
+        "@wiz-sh/config": "file:../compiler/packages/config",
+        "@wiz-sh/formatter": "file:../linter/packages/formatter",
+        "@wiz-sh/linter": "file:../linter/packages/linter",
         "bun-types": "^1.2.19",
         "typescript": "^5.9.2",
       },
     },
     "packages/language-service": {
-      "name": "@wiz/language-service",
+      "name": "@wiz-sh/language-service",
       "version": "0.1.0",
       "dependencies": {
-        "@wiz/compiler": "^0.1.0",
-        "@wiz/formatter": "^0.1.0",
-        "@wiz/linter": "^0.1.0",
+        "@wiz-sh/compiler": "^0.1.0",
+        "@wiz-sh/formatter": "^0.1.0",
+        "@wiz-sh/linter": "^0.1.0",
       },
     },
     "packages/lsp": {
-      "name": "@wiz/lsp",
+      "name": "@wiz-sh/lsp",
       "version": "0.1.0",
       "bin": {
         "wiz-lsp": "./dist/index.js",
       },
       "dependencies": {
-        "@wiz/config": "^0.1.0",
-        "@wiz/language-service": "^0.1.0",
+        "@wiz-sh/config": "^0.1.0",
+        "@wiz-sh/language-service": "^0.1.0",
       },
     },
   },
   "overrides": {
-    "@wiz/compiler": "file:../compiler/packages/compiler",
-    "@wiz/config": "file:../compiler/packages/config",
-    "@wiz/formatter": "file:../linter/packages/formatter",
-    "@wiz/linter": "file:../linter/packages/linter",
+    "@wiz-sh/compiler": "file:../compiler/packages/compiler",
+    "@wiz-sh/config": "file:../compiler/packages/config",
+    "@wiz-sh/formatter": "file:../linter/packages/formatter",
+    "@wiz-sh/linter": "file:../linter/packages/linter",
   },
   "packages": {
     "@biomejs/biome": ["@biomejs/biome@2.5.4", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.5.4", "@biomejs/cli-darwin-x64": "2.5.4", "@biomejs/cli-linux-arm64": "2.5.4", "@biomejs/cli-linux-arm64-musl": "2.5.4", "@biomejs/cli-linux-x64": "2.5.4", "@biomejs/cli-linux-x64-musl": "2.5.4", "@biomejs/cli-win32-arm64": "2.5.4", "@biomejs/cli-win32-x64": "2.5.4" }, "bin": { "biome": "bin/biome" } }, "sha512-xy5FNE5kQJKyK5MR1gJy6ztXYx4WBAbYGlK04lMEgmyPRWKybY9NFwiG9yo0XdzOU8Xvhj41u034J1ywfoWfMw=="],
@@ -62,17 +62,17 @@
 
     "@types/node": ["@types/node@26.1.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw=="],
 
-    "@wiz/compiler": ["@wiz/compiler@file:../compiler/packages/compiler", { "dependencies": { "@wiz/config": "^0.1.0" } }],
+    "@wiz-sh/compiler": ["@wiz-sh/compiler@file:../compiler/packages/compiler", { "dependencies": { "@wiz-sh/config": "^0.1.0" } }],
 
-    "@wiz/config": ["@wiz/config@file:../compiler/packages/config", {}],
+    "@wiz-sh/config": ["@wiz-sh/config@file:../compiler/packages/config", {}],
 
-    "@wiz/formatter": ["@wiz/formatter@file:../linter/packages/formatter", { "dependencies": { "@wiz/compiler": "^0.1.0" } }],
+    "@wiz-sh/formatter": ["@wiz-sh/formatter@file:../linter/packages/formatter", { "dependencies": { "@wiz-sh/compiler": "^0.1.0" } }],
 
-    "@wiz/language-service": ["@wiz/language-service@workspace:packages/language-service"],
+    "@wiz-sh/language-service": ["@wiz-sh/language-service@workspace:packages/language-service"],
 
-    "@wiz/linter": ["@wiz/linter@file:../linter/packages/linter", { "dependencies": { "@wiz/compiler": "^0.1.0" } }],
+    "@wiz-sh/linter": ["@wiz-sh/linter@file:../linter/packages/linter", { "dependencies": { "@wiz-sh/compiler": "^0.1.0" } }],
 
-    "@wiz/lsp": ["@wiz/lsp@workspace:packages/lsp"],
+    "@wiz-sh/lsp": ["@wiz-sh/lsp@workspace:packages/lsp"],
 
     "bun-types": ["bun-types@1.3.14", "", { "dependencies": { "@types/node": "*" } }, "sha512-4N0ig0fEomHt5R0KCFWjovxow98rIoRwKolrYdCcknNwMekCXRnWEUvgu5soYV8QXtVsrUD8B95MBOZGPvr6KQ=="],
 
@@ -80,24 +80,24 @@
 
     "undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@wiz/compiler/@wiz/config": ["@wiz/config@file:../compiler/packages/config", {}],
+    "@wiz-sh/compiler/@wiz-sh/config": ["@wiz-sh/config@file:../compiler/packages/config", {}],
 
-    "@wiz/formatter/@wiz/compiler": ["@wiz/compiler@file:../compiler/packages/compiler", {}],
+    "@wiz-sh/formatter/@wiz-sh/compiler": ["@wiz-sh/compiler@file:../compiler/packages/compiler", {}],
 
-    "@wiz/language-service/@wiz/compiler": ["@wiz/compiler@file:../compiler/packages/compiler", { "dependencies": { "@wiz/config": "^0.1.0" } }],
+    "@wiz-sh/language-service/@wiz-sh/compiler": ["@wiz-sh/compiler@file:../compiler/packages/compiler", { "dependencies": { "@wiz-sh/config": "^0.1.0" } }],
 
-    "@wiz/language-service/@wiz/formatter": ["@wiz/formatter@file:../linter/packages/formatter", { "dependencies": { "@wiz/compiler": "^0.1.0" } }],
+    "@wiz-sh/language-service/@wiz-sh/formatter": ["@wiz-sh/formatter@file:../linter/packages/formatter", { "dependencies": { "@wiz-sh/compiler": "^0.1.0" } }],
 
-    "@wiz/language-service/@wiz/linter": ["@wiz/linter@file:../linter/packages/linter", { "dependencies": { "@wiz/compiler": "^0.1.0" } }],
+    "@wiz-sh/language-service/@wiz-sh/linter": ["@wiz-sh/linter@file:../linter/packages/linter", { "dependencies": { "@wiz-sh/compiler": "^0.1.0" } }],
 
-    "@wiz/linter/@wiz/compiler": ["@wiz/compiler@file:../compiler/packages/compiler", {}],
+    "@wiz-sh/linter/@wiz-sh/compiler": ["@wiz-sh/compiler@file:../compiler/packages/compiler", {}],
 
-    "@wiz/lsp/@wiz/config": ["@wiz/config@file:../compiler/packages/config", {}],
+    "@wiz-sh/lsp/@wiz-sh/config": ["@wiz-sh/config@file:../compiler/packages/config", {}],
 
-    "@wiz/language-service/@wiz/compiler/@wiz/config": ["@wiz/config@file:../compiler/packages/config", {}],
+    "@wiz-sh/language-service/@wiz-sh/compiler/@wiz-sh/config": ["@wiz-sh/config@file:../compiler/packages/config", {}],
 
-    "@wiz/language-service/@wiz/formatter/@wiz/compiler": ["@wiz/compiler@file:../compiler/packages/compiler", {}],
+    "@wiz-sh/language-service/@wiz-sh/formatter/@wiz-sh/compiler": ["@wiz-sh/compiler@file:../compiler/packages/compiler", {}],
 
-    "@wiz/language-service/@wiz/linter/@wiz/compiler": ["@wiz/compiler@file:../compiler/packages/compiler", {}],
+    "@wiz-sh/language-service/@wiz-sh/linter/@wiz-sh/compiler": ["@wiz-sh/compiler@file:../compiler/packages/compiler", {}],
   }
 }

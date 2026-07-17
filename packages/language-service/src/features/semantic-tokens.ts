@@ -1,4 +1,4 @@
-import { type Statement, SyntaxKind, type TextRange } from "@wiz/compiler";
+import { type Statement, SyntaxKind, type TextRange } from "@wiz-sh/compiler";
 import type { DocumentSnapshot } from "../snapshot.ts";
 import { declarationNameRange } from "./symbol-ranges.ts";
 

@@ -10,9 +10,9 @@ import {
     Scope,
     type SourceFile,
     type Statement,
-} from "@wiz/compiler";
-import type { LinterOptions } from "@wiz/linter";
-import { lintSourceFile } from "@wiz/linter";
+} from "@wiz-sh/compiler";
+import type { LinterOptions } from "@wiz-sh/linter";
+import { lintSourceFile } from "@wiz-sh/linter";
 import type { DocumentSnapshot } from "./snapshot.ts";
 
 interface SourceDocument {

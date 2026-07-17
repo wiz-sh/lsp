@@ -7,13 +7,13 @@
         "outDir": "./dist",
         "rootDir": "./src",
         "paths": {
-            "@wiz/compiler": [
+            "@wiz-sh/compiler": [
                 "../../../compiler/packages/compiler/dist/index.d.ts"
             ],
-            "@wiz/formatter": [
+            "@wiz-sh/formatter": [
                 "../../../linter/packages/formatter/dist/index.d.ts"
             ],
-            "@wiz/linter": [
+            "@wiz-sh/linter": [
                 "../../../linter/packages/linter/dist/index.d.ts"
             ]
         }

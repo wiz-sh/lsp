@@ -1,4 +1,4 @@
-import type { AstNode, TextRange } from "@wiz/compiler";
+import type { AstNode, TextRange } from "@wiz-sh/compiler";
 
 export function declarationNameRange(
     node: AstNode,

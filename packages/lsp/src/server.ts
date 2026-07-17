@@ -1,9 +1,9 @@
-import { loadConfig } from "@wiz/config";
+import { loadConfig } from "@wiz-sh/config";
 import {
     LanguageService,
     type ServiceLocation,
     type TextEdit,
-} from "@wiz/language-service";
+} from "@wiz-sh/language-service";
 import {
     offsetAt,
     type Position,

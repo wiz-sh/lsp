@@ -4,7 +4,7 @@ Read `WIZ.md` for the product model before changing public behavior.
 
 ## Ownership
 
-This repository owns `@wiz/language-service` and `@wiz/lsp`. Semantic behavior belongs in the reusable language service. The LSP package only manages protocol transport, lifecycle, and conversion.
+This repository owns `@wiz-sh/language-service` and `@wiz-sh/lsp`. Semantic behavior belongs in the reusable language service. The LSP package only manages protocol transport, lifecycle, and conversion.
 
 ## Engineering rules
 
