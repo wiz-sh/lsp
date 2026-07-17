@@ -21,7 +21,7 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.0",
-        "@wiz-sh/compiler": "^0.1.0",
+        "@wiz-sh/compiler": "^0.1.2",
         "@wiz-sh/config": "^0.1.0",
         "@wiz-sh/formatter": "^0.1.0",
         "@wiz-sh/linter": "^0.1.0",

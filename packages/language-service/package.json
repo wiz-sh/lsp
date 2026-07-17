@@ -1,6 +1,6 @@
 {
     "name": "@wiz-sh/language-service",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Editor intelligence and incremental project services for Wiz",
     "license": "MIT",
     "repository": {
@@ -24,7 +24,7 @@
         "build": "bun build ./src/index.ts --outdir ./dist --target bun --format esm && tsc --project ./tsconfig.build.json"
     },
     "dependencies": {
-        "@wiz-sh/compiler": "^0.1.0",
+        "@wiz-sh/compiler": "^0.1.2",
         "@wiz-sh/formatter": "^0.1.0",
         "@wiz-sh/linter": "^0.1.0"
     },

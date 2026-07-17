@@ -49,6 +49,38 @@ test("protocol server initializes and serves document features", () => {
     );
 });
 
+test("protocol diagnostics report missing typed declaration attributes", () => {
+    const server = new LspServer();
+
+    const uri = "file:///workspace/invalid-local.wiz";
+
+    server.notify("textDocument/didOpen", {
+        textDocument: {
+            uri,
+            text: "local string root=wiz\n",
+            version: 1,
+        },
+    });
+
+    const diagnostics = server.request("textDocument/diagnostic", {
+        textDocument: { uri },
+    });
+
+    expect(diagnostics).toEqual(
+        expect.objectContaining({
+            kind: "full",
+            items: expect.arrayContaining([
+                expect.objectContaining({
+                    code: "WIZ2002",
+                    message: expect.stringContaining(
+                        "Typed local declarations require -T",
+                    ),
+                }),
+            ]),
+        }),
+    );
+});
+
 test("protocol exposes every advertised document intelligence feature", () => {
     const server = new LspServer();
 
