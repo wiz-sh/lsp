@@ -7,6 +7,9 @@
         "outDir": "./dist",
         "rootDir": "./src",
         "paths": {
+            "@wiz/config": [
+                "../../../compiler/packages/config/dist/index.d.ts"
+            ],
             "@wiz/language-service": [
                 "../language-service/dist/index.d.ts"
             ]

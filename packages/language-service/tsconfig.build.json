@@ -8,13 +8,13 @@
         "rootDir": "./src",
         "paths": {
             "@wiz/compiler": [
-                "../compiler/dist/index.d.ts"
+                "../../../compiler/packages/compiler/dist/index.d.ts"
             ],
             "@wiz/formatter": [
-                "../formatter/dist/index.d.ts"
+                "../../../linter/packages/formatter/dist/index.d.ts"
             ],
             "@wiz/linter": [
-                "../linter/dist/index.d.ts"
+                "../../../linter/packages/linter/dist/index.d.ts"
             ]
         }
     },
