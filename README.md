@@ -33,8 +33,6 @@ Most users start the server through `wiz lsp --stdio` or the [VS Code extension]
 
 ## Development
 
-Keep compiler, types, and linter repositories beside this checkout:
-
 ```console
 bun install
 bun run check
